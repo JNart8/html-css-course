@@ -27,6 +27,14 @@
         cursor: pointer;
     }
 
+    .amazon-btn:hover {
+        opacity: 0.8;
+    }
+
+    .amazon-btn:active {
+        opacity: 0.6;
+    }
+
     .github-btn {
         background-color: #35c16b;
         color: #fff;
@@ -37,6 +45,14 @@
         cursor: pointer;
     }
 
+    .github-btn:hover {
+        opacity: 0.8;
+    }
+
+    .github-btn:active {
+        opacity: 0.6;
+    }
+
     .bootstrap-request-btn {
         background-color: #563d7c;
         color: #fff;
@@ -45,6 +61,14 @@
         font-size: 16px;
         font-weight: bold;
         cursor: pointer;
+    }
+
+    .bootstrap-request-btn:hover {
+        opacity: 0.8;
+    }
+
+    .bootstrap-request-btn:active {
+        opacity: 0.6;
     }
 
     .bootstrap-download-btn {
@@ -92,6 +116,64 @@
     .save-btn:active {
         opacity: 0.6;
     }
+
+    .back-btn {
+        background-color: #f0f0f0;
+        color: #000;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 15px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .next-btn {
+        background-color: #f0f0f0;
+        color: #000;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 15px 15px;
+        font-size: 16px;
+        font-weight: semi-bold;
+        cursor: pointer;
+
+    }
+
+    .pageno {
+        margin-right: 10px;
+    }
+
+    .stretch {
+        background-color: #0f6409;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: padding 0.5s ease;
+    }
+
+    .stretch:hover {
+        padding: 15px;
+    }
+
+    .shadow-btn {
+        background-color: #0f6409;
+        color: #fff;
+        border: none;
+        padding: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .shadow-btn:active {
+        box-shadow: none;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
 </style>
 <p>Uber</p>
 <button class="uber-btn">Request now</button>
@@ -109,3 +191,19 @@
 <p>LinkedIn</p>
 <button class="linkedin-btn">Apply on company website</button>
 <button class="save-btn">Save</button>
+
+<br>
+<h5>Pagination</h5>
+<button class="back-btn">Back</button>
+<a class="pageno" href="https://www.google.com" target="_blank">1</a> <!-- Target blank opens link in a new tab -->
+<a class="pageno" href="https://www.google.com" target="_blank">2</a>
+<a class="pageno" href="https://www.google.com" target="_blank">3</a>
+<a class="pageno" href="https://www.google.com" target="_blank">4</a>
+<button class="next-btn">Next</button>
+
+<h5>Stretch</h5>
+<button class="stretch">Stretch</button>
+
+<h5>Shadow</h5>
+
+<button class="shadow-btn">Shadow</button>
