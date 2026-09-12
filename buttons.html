@@ -1,209 +1,221 @@
-<style>
-    .uber-btn {
-        background-color: #000;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: opacity 0.3s ease;
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-    .uber-btn:hover {
-        opacity: 0.8;
-    }
+    <head>
+        <title>Buttons</title>
+        <style>
+            .uber-btn {
+                background-color: #000;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: opacity 0.3s ease;
+            }
 
-    .uber-btn:active {
-        opacity: 0.6;
-    }
+            .uber-btn:hover {
+                opacity: 0.8;
+            }
 
-    .amazon-btn {
-        background-color: #FF9900;
-        color: #000;
-        border: none;
-        border-radius: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
+            .uber-btn:active {
+                opacity: 0.6;
+            }
 
-    .amazon-btn:hover {
-        opacity: 0.8;
-    }
+            .amazon-btn {
+                background-color: #FF9900;
+                color: #000;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
 
-    .amazon-btn:active {
-        opacity: 0.6;
-    }
+            .amazon-btn:hover {
+                opacity: 0.8;
+            }
 
-    .github-btn {
-        background-color: #35c16b;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
+            .amazon-btn:active {
+                opacity: 0.6;
+            }
 
-    .github-btn:hover {
-        opacity: 0.8;
-    }
+            .github-btn {
+                background-color: #35c16b;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
 
-    .github-btn:active {
-        opacity: 0.6;
-    }
+            .github-btn:hover {
+                opacity: 0.8;
+            }
 
-    .bootstrap-request-btn {
-        background-color: #563d7c;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-    }
+            .github-btn:active {
+                opacity: 0.6;
+            }
 
-    .bootstrap-request-btn:hover {
-        opacity: 0.8;
-    }
+            .bootstrap-request-btn {
+                background-color: #563d7c;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+            }
 
-    .bootstrap-request-btn:active {
-        opacity: 0.6;
-    }
+            .bootstrap-request-btn:hover {
+                opacity: 0.8;
+            }
 
-    .bootstrap-download-btn {
-        background-color: #fff;
-        color: #aaa;
-        border: 1px solid #563d7c;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: box-shadow 0.3s ease;
-    }
+            .bootstrap-request-btn:active {
+                opacity: 0.6;
+            }
 
-    .bootstrap-download-btn:hover {
-        box-shadow: 0 0 5px rgba(86, 61, 124, 0.5);
-    }
+            .bootstrap-download-btn {
+                background-color: #fff;
+                color: #aaa;
+                border: 1px solid #563d7c;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: box-shadow 0.3s ease;
+            }
 
-    .linkedin-btn {
-        background-color: #0077B5;
-        color: #fff;
-        border: none;
-        border-radius: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
+            .bootstrap-download-btn:hover {
+                box-shadow: 0 0 5px rgba(86, 61, 124, 0.5);
+            }
 
-    .save-btn {
-        background-color: #fff;
-        color: #0077B5;
-        border: 1px solid #0077B5;
-        border-radius: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease,
-            color 0.3s ease;
-    }
+            .linkedin-btn {
+                background-color: #0077B5;
+                color: #fff;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
 
-    .save-btn:hover {
-        background-color: #0077B5;
-        color: #fff;
-    }
+            .save-btn {
+                background-color: #fff;
+                color: #0077B5;
+                border: 1px solid #0077B5;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease,
+                    color 0.3s ease;
+            }
 
-    .save-btn:active {
-        opacity: 0.6;
-    }
+            .save-btn:hover {
+                background-color: #0077B5;
+                color: #fff;
+            }
 
-    .back-btn {
-        background-color: #f0f0f0;
-        color: #000;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 15px 15px;
-        font-size: 16px;
-        cursor: pointer;
-        margin-right: 10px;
-    }
+            .save-btn:active {
+                opacity: 0.6;
+            }
 
-    .next-btn {
-        background-color: #f0f0f0;
-        color: #000;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 15px 15px;
-        font-size: 16px;
-        font-weight: semi-bold;
-        cursor: pointer;
+            .back-btn {
+                background-color: #f0f0f0;
+                color: #000;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 15px 15px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-right: 10px;
+            }
 
-    }
+            .next-btn {
+                background-color: #f0f0f0;
+                color: #000;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 15px 15px;
+                font-size: 16px;
+                font-weight: semi-bold;
+                cursor: pointer;
 
-    .pageno {
-        margin-right: 10px;
-    }
+            }
 
-    .stretch {
-        background-color: #0f6409;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: padding 0.5s ease;
-    }
+            .pageno {
+                margin-right: 10px;
+            }
 
-    .stretch:hover {
-        padding: 15px;
-    }
+            .stretch {
+                background-color: #0f6409;
+                color: #fff;
+                border: none;
+                padding: 10px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: padding 0.5s ease;
+            }
 
-    .shadow-btn {
-        background-color: #0f6409;
-        color: #fff;
-        border: none;
-        padding: 15px;
-        font-size: 16px;
-        cursor: pointer;
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-        transition: box-shadow 0.3s ease;
-    }
+            .stretch:hover {
+                padding: 15px;
+            }
 
-    .shadow-btn:active {
-        box-shadow: none;
-        margin-top: 2px;
-        margin-left: 2px;
-    }
-</style>
-<p>Uber</p>
-<button class="uber-btn">Request now</button>
+            .shadow-btn {
+                background-color: #0f6409;
+                color: #fff;
+                border: none;
+                padding: 15px;
+                font-size: 16px;
+                cursor: pointer;
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+                transition: box-shadow 0.3s ease;
+            }
 
-<p>Amazon</p>
-<button class="amazon-btn">Add to cart</button>
+            .shadow-btn:active {
+                box-shadow: none;
+                margin-top: 2px;
+                margin-left: 2px;
+            }
+        </style>
+    </head>
 
-<p>GitHub</p>
-<button class="github-btn">Sign up</button>
+    <body>
+        <p>Uber</p>
+        <button class="uber-btn">Request now</button>
 
-<p>Bootstrap</p>
-<button class="bootstrap-request-btn">Request now</button>
-<button class="bootstrap-download-btn">Download</button>
+        <p>Amazon</p>
+        <button class="amazon-btn">Add to cart</button>
 
-<p>LinkedIn</p>
-<button class="linkedin-btn">Apply on company website</button>
-<button class="save-btn">Save</button>
+        <p>GitHub</p>
+        <button class="github-btn">Sign up</button>
 
-<br>
-<h5>Pagination</h5>
-<button class="back-btn">Back</button>
-<a class="pageno" href="https://www.google.com" target="_blank">1</a> <!-- Target blank opens link in a new tab -->
-<a class="pageno" href="https://www.google.com" target="_blank">2</a>
-<a class="pageno" href="https://www.google.com" target="_blank">3</a>
-<a class="pageno" href="https://www.google.com" target="_blank">4</a>
-<button class="next-btn">Next</button>
+        <p>Bootstrap</p>
+        <button class="bootstrap-request-btn">Request now</button>
+        <button class="bootstrap-download-btn">Download</button>
 
-<h5>Stretch</h5>
-<button class="stretch">Stretch</button>
+        <p>LinkedIn</p>
+        <button class="linkedin-btn">Apply on company website</button>
+        <button class="save-btn">Save</button>
 
-<h5>Shadow</h5>
+        <br>
+        <h5>Pagination</h5>
+        <button class="back-btn">Back</button>
+        <a class="pageno" href="https://www.google.com" target="_blank">1</a>
+        <!-- Target blank opens link in a new tab -->
+        <a class="pageno" href="https://www.google.com" target="_blank">2</a>
+        <a class="pageno" href="https://www.google.com" target="_blank">3</a>
+        <a class="pageno" href="https://www.google.com" target="_blank">4</a>
+        <button class="next-btn">Next</button>
 
-<button class="shadow-btn">Shadow</button>
+        <h5>Stretch</h5>
+        <button class="stretch">Stretch</button>
+
+        <h5>Shadow</h5>
+
+        <button class="shadow-btn">Shadow</button>
+    </body>
+
+</html>
