@@ -1,0 +1,71 @@
+p {
+	font-family: Arial;
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.friend-card {
+	width: 200px;
+	border: none;
+	border-radius: 10px;
+	padding: 20px;
+	display: inline-block;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.friend-card img {
+	width: 200px;
+	object-fit: cover;
+}
+
+.description {
+	color: #666;
+	font-size: 14px;
+}
+
+.add-friend {
+	background-color: #1d6ff2;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+div {
+	text-align: center;
+}
+
+.google-logo {
+	width: 200px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+input {
+	border: none;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 16px;
+	padding-right: 16px;
+	font-size: 16px;
+	width: 500px;
+	border-radius: 30px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+	margin-bottom: 30px;
+}
+
+.google-button {
+	background-color: rgb(245, 245, 245);
+	border: none;
+	font-size: 15px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.search-button {
+	margin-right: 10px;
+}
