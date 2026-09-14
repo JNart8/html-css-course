@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container {
+                width: 400px;
+                height: 200px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                justify-content: space-between;
+                padding-right: 20px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-family: Roboto;
+                font-size: 20px;
+                margin: 0;
+            }
+
+            .stats {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-left: 20px;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+
+            .badge {
+                background-color: #007bff;
+                color: white;
+                border-radius: 15px;
+                border: none;
+                height: 30px;
+                font-size: 16px;
+                font-family: Roboto;
+                margin-left: 10px;
+                margin-right: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .container-two {
+                width: 400px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                justify-content: space-between;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .profile-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-left: 20px;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+
+            .profile {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .profile-image {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .profile-details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: #777;
+                font-family: Arial;
+                font-size: 16px;
+                margin-left: 10px;
+            }
+
+            .Follow {
+                background-color: #007bff;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                height: 40px;
+                font-size: 16px;
+                font-family: Roboto;
+                margin-left: 10px;
+                margin-right: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-weight: bold;
+            }
+
+            .name,
+            .username,
+            .bio {
+                font-size: 16px;
+            }
+
+            .name {
+                font-weight: bold;
+            }
+
+            .username {
+                font-style: italic;
+            }
+
+            .bio {
+                color: #777;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="stats">
+                <p>Home</p>
+                <button class="badge">14</button>
+            </div>
+
+            <div class="stats">
+                <p>Notifications</p>
+                <button class="badge">3</button>
+            </div>
+
+            <div class="stats">
+                <p>Messages</p>
+                <button class="badge">5</button>
+            </div>
+        </div>
+
+
+        <div class="container-two">
+            <div class="profile-container">
+                <div class="profile">
+                    <img class="profile-image" src="cat.jpg" alt="cat">
+                    <div class="profile-details">
+                        <p class="name">Oliver</p>
+                        <p class="username">the cat</p>
+                        <p class="bio">Popular</p>
+                    </div>
+                </div>
+                <button class="Follow">Follow</button>
+            </div>
+
+            <div class="profile-container">
+                <div class="profile">
+                    <img class="profile-image" src="cat.jpg" alt="cat">
+                    <div class="profile-details">
+                        <p class="name">Oliver</p>
+                        <p class="username">the cat</p>
+                        <p class="bio">Popular</p>
+                    </div>
+                </div>
+                <button class="Follow">Follow</button>
+            </div>
+
+            <div class="profile-container">
+                <div class="profile">
+                    <img class="profile-image" src="cat.jpg" alt="cat">
+                    <div class="profile-details">
+                        <p class="name">Oliver</p>
+                        <p class="username">the cat</p>
+                        <p class="bio">Popular</p>
+                    </div>
+                </div>
+                <button class="Follow">Follow</button>
+            </div>
+        </div>
+    </body>
+
+</html>
